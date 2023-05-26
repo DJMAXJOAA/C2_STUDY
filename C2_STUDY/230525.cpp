@@ -51,8 +51,3 @@ using namespace std;
 //	cout << endl << "종료" << endl;
 //	return 0;
 //}
-
-int main()
-{
-
-}

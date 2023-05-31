@@ -21,5 +21,14 @@
     <ClCompile Include="230526.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="230529.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230531.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

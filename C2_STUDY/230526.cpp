@@ -4,6 +4,7 @@
 #include <cmath> // sqrt 사용
 #include <cstring>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -23,7 +24,7 @@ using namespace std;
 /* string */
 //int main()
 //{
-//	const int ArSize = 20;
+//	const int ArSize = 20;                 
 //	char name[ArSize];
 //	char dessert[ArSize];
 //
@@ -108,25 +109,96 @@ using namespace std;
 //		delete pInt;
 //}
 
+/* 메모리 누수 확인 */
+//int main()
+//{
+//	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+//	double* p3 = new double[3];
+//
+//	p3[0] = 0.2;
+//	p3[1] = 0.5;
+//	p3[2] = 0.8;
+//
+//	cout << p3[1] << endl;
+//	p3 = p3 + 1;
+//	cout << p3[0] << "," << p3[1] << endl;
+//
+//	p3 = p3 - 1;
+//	cout << p3[0] << "," << p3[1] << endl;
+//
+//	delete[] p3;
+//	_CrtDumpMemoryLeaks();
+//	return 0;
+//}
 
+/* 포인터 확인 */
+//int main()
+//{
+//	double wages[3] = { 10000.0, 20000.0, 30000.0 };
+//	short stacks[3] = { 3, 2, 1 };
+//
+//	double* pw = wages;
+//	short* ps = &stacks[0];
+//
+//	cout << "pw = " << pw << ", *pw = " << *pw << endl;
+//	pw = pw + 1;
+//	cout << "pw 포인터에 1을 더함 : " << endl;
+//	cout << "pw = " << pw << ", *pw = " << *pw << endl;
+//
+//	cout << "ps = " << ps << ", *ps = " << *ps << endl;
+//	ps = ps + 1;
+//	cout << "ps 포인터에 1을 더함 : " << endl;
+//	cout << "ps = " << ps << ", *ps = " << *ps << endl;
+//
+//	cout << "배열 표기로 두 원소에 접근" << endl;
+//	cout << "stacks[0] = " << stacks[0]
+//		<< ", stacks[1] = " << stacks[1] << endl;
+//	cout << "포인터 표기로 두 원소에 접근" << endl;
+//	cout << "*stacks = " << *stacks
+//		<< ", *(stacks + 1) = " << *(stacks + 1) << endl;
+//
+//	cout << sizeof(wages) << " = wages 배열의 크기" << endl;
+//	cout << sizeof(pw) << "= pw 포인터의 크기" << endl;
+//	return 0;
+//}
+
+/* delete */
+//char* getname();
+//
+//int main()
+//{
+//	char* name;
+//	name = getname();
+//	cout << (int*)name << " : " << name << endl;
+//	delete[] name;
+//
+//	name = getname();
+//	cout << (int*)name << " : " << name << endl;
+//	delete[] name;
+//
+//	return 0;
+//}
+//
+//char* getname()
+//{
+//	char temp[80];
+//	cout << "이름을 입력하세요 : ";
+//	cin >> temp;
+//	char* pn = new char[strlen(temp) + 1];
+//	strcpy(pn, temp);
+//
+//	return pn;
+//}
 
 int main()
 {
-	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-	double* p3 = new double[3];
+	vector<int> vi;
 
-	p3[0] = 0.2;
-	p3[1] = 0.5;
-	p3[2] = 0.8;
+	vi.push_back(1);
+	vi.push_back(2);
 
-	cout << p3[1] << endl;
-	p3 = p3 + 1;
-	cout << p3[0] << "," << p3[1] << endl;
+	cout << vi[0] << endl;
+	cout << vi[1] << endl;
 
-	p3 = p3 - 1;
-	cout << p3[0] << "," << p3[1] << endl;
-
-	delete[] p3;
-	_CrtDumpMemoryLeaks();
 	return 0;
 }

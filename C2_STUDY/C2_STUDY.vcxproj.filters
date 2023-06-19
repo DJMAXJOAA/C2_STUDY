@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\cpp">
+      <UniqueIdentifier>{47a205f2-2bde-47b2-ad5c-eb19b50a2d89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="230525.cpp">
@@ -33,5 +36,106 @@
     <ClCompile Include="230602.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="230605.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230607.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230608.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230609.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230614.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230615.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230616.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="monster.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mytime0.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="stock00.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="stock20.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="string1.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="strngbad.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="usestock0.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="usestock20.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="usetime0.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="tabtenn1.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="230619.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dma.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="worker0.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stock00.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stock20.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mytime0.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="strngbad.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="all.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="string1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="monster.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="tabtenn1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dma.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="worker0.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stacktp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stcktp1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="queuetp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

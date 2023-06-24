@@ -18,7 +18,7 @@ public:
 	bool isfull() { return queuesize == num; }
 	bool enque(const Type& item);
 	bool deque(Type& item);
-	Queue& operator=(const Queue<Type>& st);
+	/*Queue& operator=(const Queue<Type>& st);*/
 };
 
 template<class Type>
@@ -48,14 +48,14 @@ bool Queue<Type>::enque(const Type& item)
 	if (isfull())
 		return false;
 	num++;
-	if (back == queuesize)
+	if (back == queuesize -1)
 	{
-		items[0] = item;
+		items[back] = item;
 		back = 0;
 		return true;
 	}
 	else
-		items[++back] = item;
+		items[back++] = item;
 	return true;
 }
 
@@ -65,7 +65,7 @@ bool Queue<Type>::deque(Type& item)
 	if (isempty())
 		return false;
 	num--;
-	if (front == queuesize)
+	if (front == queuesize -1)
 	{
 		item = items[front];
 		front = 0;
@@ -76,19 +76,19 @@ bool Queue<Type>::deque(Type& item)
 	return true;
 }
 
-template<class Type>
-Queue<Type>& Queue<Type>::operator=(const Queue<Type>& st)
-{
-	if (this == &st)
-		return *this;
-	delete[] items;
-	queuesize = st.queuesize;
-	num = st.num;
-	front = st.front;
-	back = st.back;
-	items = new Type[queuesize];
-	for (int i = 0; i < queuesize; i++)
-	{
-		items[i] = st.items[i];
-	}
-}
+//template<class Type>
+//Queue<Type>& Queue<Type>::operator=(const Queue<Type>& st)
+//{
+//	if (this == &st)
+//		return *this;
+//	delete[] items;
+//	queuesize = st.queuesize;
+//	num = st.num;
+//	front = st.front;
+//	back = st.back;
+//	items = new Type[queuesize];
+//	for (int i = 0; i < queuesize; i++)
+//	{
+//		items[i] = st.items[i];
+//	}
+//}

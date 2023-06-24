@@ -1,6 +1,6 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdlib.h>
+#include <cstdlib>
 #include <crtdbg.h>
 #include <iostream>
 #include <cmath>
@@ -10,3 +10,11 @@
 #include <fstream>
 #include <windows.h>
 #include <new>
+#include <exception>
+#include <list>
+#include <algorithm>
+#include <iterator>
+#include <deque>
+#include <set>
+#include <map>
+#include <iomanip>

@@ -167,17 +167,30 @@
     <ClCompile Include="230616.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="230619.cpp" />
+    <ClCompile Include="230619.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="230621.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="230622.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="230623.cpp" />
     <ClCompile Include="dma.cpp" />
     <ClCompile Include="monster.cpp" />
     <ClCompile Include="mytime0.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="binary.cpp" />
     <ClCompile Include="string1.cpp" />
     <ClCompile Include="strngbad.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="tabtenn1.cpp" />
+    <ClCompile Include="tv.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="usestock20.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -198,11 +211,14 @@
   <ItemGroup>
     <ClInclude Include="all.h" />
     <ClInclude Include="dma.h" />
+    <ClInclude Include="exc_mean.h" />
+    <ClInclude Include="functor.h" />
     <ClInclude Include="monster.h" />
     <ClInclude Include="mytime0.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="queuetp.h" />
+    <ClInclude Include="queuetpp.h" />
     <ClInclude Include="stacktp.h" />
     <ClInclude Include="stcktp1.h" />
     <ClInclude Include="stock00.h">
@@ -214,6 +230,10 @@
     <ClInclude Include="string1.h" />
     <ClInclude Include="strngbad.h" />
     <ClInclude Include="tabtenn1.h" />
+    <ClInclude Include="0621.h" />
+    <ClInclude Include="tv.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="worker0.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

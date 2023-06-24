@@ -44,7 +44,7 @@ int main()
 {
 	Queue<Worker*> worker(Size);
 	Worker* lolas[Size];
-	Worker* lolas2[Size];
+	
 	int ct;
 	for ( ct = 0; ct < Size; ct++)
 	{
@@ -79,15 +79,13 @@ int main()
 	int i;
 	for ( i = 0; i < ct; i++)
 	{
-		worker.deque(lolas2[i]);
-		lolas2[i]->Show();
+		worker.deque(lolas[i]);
+		lolas[i]->Show();
 		cout << endl;
-		/*lolas[i]->Show();*/
 	}
 	for ( i = 0; i < ct; i++)
 	{
 		delete lolas[i];
-		delete lolas2[i];
 	}
 	cout << "프로그램을 종료합니다.\n";
 	return 0;

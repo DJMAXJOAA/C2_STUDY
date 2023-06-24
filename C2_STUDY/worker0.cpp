@@ -19,16 +19,6 @@ void Worker::Get()
 	}
 }
 
-Worker::Worker()
-	: fullname("no name"), id(0L)
-{
-}
-
-Worker::Worker(const std::string& s, long n)
-	: fullname(s), id(n)
-{
-}
-
 Worker::~Worker()
 {
 }
@@ -50,21 +40,6 @@ void Waiter::Get()
 	}
 }
 
-Waiter::Waiter()
-	: Worker(), panache(0)
-{
-}
-
-Waiter::Waiter(const std::string& s, long n, int p)
-	:Worker(s, n), panache(p)
-{
-}
-
-Waiter::Waiter(const Worker& wk, int p)
-	: Worker(wk), panache(p)
-{
-}
-
 void Waiter::Set()
 {
 	cout << "웨이터의 이름을 입력하십시오: ";
@@ -80,7 +55,6 @@ void Waiter::Show() const
 }
 
 /* ================================================================= */
-
 
 const char* Singer::pv[] = { "other", "alto", "contralto", "soprano", "bass", "baritone", "tenor" };
 
@@ -106,21 +80,6 @@ void Singer::Get()
 	{
 		continue;
 	}
-}
-
-Singer::Singer()
-	:Worker(), voice(other)
-{
-}
-
-Singer::Singer(const std::string& s, long n, int v)
-	: Worker(s,n), voice(v)
-{
-}
-
-Singer::Singer(const Worker& wk, int v)
-	: Worker(wk), voice(v)
-{
 }
 
 void Singer::Set()
@@ -149,30 +108,6 @@ void SingingWaiter::Get()
 {
 	Singer::Get();
 	Waiter::Get();
-}
-
-SingingWaiter::SingingWaiter()
-{
-}
-
-SingingWaiter::SingingWaiter(const std::string& s, long n, int p, int v)
-	: Worker(s, n), Waiter(s, n, p), Singer(s, n, v)
-{
-}
-
-SingingWaiter::SingingWaiter(const Worker& wk, int p, int v)
-	: Worker(wk), Waiter(wk,p), Singer(wk, v)
-{
-}
-
-SingingWaiter::SingingWaiter(const Waiter& wt, int v)
-	: Worker(wt), Waiter(wt), Singer(wt, v)
-{
-}
-
-SingingWaiter::SingingWaiter(const Singer& wt, int p)
-	: Worker(wt), Waiter(wt, p), Singer(wt)
-{
 }
 
 void SingingWaiter::Set()

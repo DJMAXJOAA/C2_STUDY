@@ -96,6 +96,21 @@
     <ClCompile Include="worker0.cpp">
       <Filter>소스 파일\cpp</Filter>
     </ClCompile>
+    <ClCompile Include="230621.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tv.cpp">
+      <Filter>소스 파일\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="230622.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="230623.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="binary.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock00.h">
@@ -135,6 +150,21 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="queuetp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="0621.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="tv.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="queuetpp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="exc_mean.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="functor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
